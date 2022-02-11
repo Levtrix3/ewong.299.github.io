@@ -1,0 +1,94 @@
+/* Css for index.html page ( Designs the page) */
+/* Fonts for index */
+
+h1 { font-family: "Rockwell Extra Bold", "Rockwell Bold", 
+    monospace; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; } 
+h2 { font-family: "Rockwell Extra Bold", "Rockwell Bold", 
+    monospace; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; } 
+h3 { font-family: "Rockwell Extra Bold", "Rockwell Bold", 
+    monospace; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; } 
+h4 { font-family: "Rockwell Extra Bold", "Rockwell Bold", 
+    monospace; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; } 
+p { font-family: "Rockwell Extra Bold", "Rockwell Bold", 
+    monospace; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; } 
+blockquote { font-family: "Rockwell Extra Bold", "Rockwell Bold", 
+    monospace; 
+    font-size: 21px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; } 
+pre { font-family: "Rockwell Extra Bold", "Rockwell Bold", 
+    monospace; 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.5714px; }
+
+/* Link appearance */
+    a:link {
+        color: rgb(223, 215, 215);
+        background-color: transparent;
+        text-decoration: none;
+      }
+    a:visited {
+        color: rgb(223, 215, 215);
+        background-color: transparent;
+        text-decoration: none;
+      }
+    a:hover {
+        color: rgb(128, 12, 12);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    a:active {
+        color: rgb(128, 12, 12);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    
+/* TypeWriter Effect */
+.container{
+    display: inline-block;
+  }
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(224, 218, 218);
+    height: 32pt;
+    white-space: nowrap;
+    animation: 
+    typing 1s steps(20, end) forwards;
+    font-size: 1.0rem;
+    width: 0;
+  }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
