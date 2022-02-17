@@ -2,31 +2,76 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Core 2: Interaction Main Page</title>
-
-        <style>
+        <meta http-equiv="X-UA-Compatible" content="IR-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Type Face Specimen</title>
+        <link rel="stylesheet" href="../Assignment_2/typeface_specimen.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"><style>
              
-         body{background-color:rgb(255, 255, 255);
-           color:rgb(0, 0, 0);
-           font-family: Georgia, 'Times New Roman', Times, serif;}
+         body{background-color:rgb(17, 17, 17);
+           color:rgb(240, 236, 236);
+           font-family: 'Noto Sans JP', sans-serif;}
         </style>
         
     </head>
 <!-- TypeFace Speciman for Assignment 2 -->
 <!-- TypeFace: Noto Sans Japanese ( Also Supports English btw ) -->
-    <body>
+    <body style="
+    margin-left: 70pt;
+    margin-right: 70pt;
+    margin-top: 40pt;
+    ">
         <div>
-            <h4> TypeFace Specimen</h4>
-            <h2> Noto Sans Japanese</h2>
+            <h4> TypeFace Specimen: Noto Sans 日本語</h4>
+            <h1 style="font-size: 72pt;
+            line-height: 20pt;"><b>こんにちは！</b></h1>
+            <h2 style="line-height: 10pt;"><b>ソラです。ヽ(°〇°)ﾉ  </b></h2>
             
-            <h3> About the Type Face</h3>
-            <p> (Filler Text)</p>
+            <h3 style="line-height: 20pt;"> About the Type Face</h3>
+            <p> According to Google: "Noto is a global font collection for writing in all modern and ancient languages. Noto Sans JP is an unmodulated (“sans serif”) design for the Japanese language and other languages used in Japan. It covers Hiragana, Katakana and Kanji. It also supports Latin, Cyrillic, Greek and Hangul. It has 65,535 glyphs."</p>
 
+            <!-- Sample text Box on Hover -->
+            
+
+
+
+            
         </div>
 
         <!--Font Testing and Descriptions-->
         <div>
 
+            <div class="container">
+                <header class="container-head">
+                    <h1> Styles</h1>
+                    <div class="slider-container">
+                        <p class="font-size-text">
+                            <span id="pixels>">40</span>
+                        </p>
+                        <input type="range" min="8" max="100" value="40" id="slider">
+                    </div>
+                </header>
+
+                <div class="items">
+                    <div class="row">
+                        <p> Yeah  Man Not really</p>
+                    </div>
+
+                    <div class="row">
+                        <p> Yeah  Man Not really</p>
+                    </div>
+                    
+                    <div class="row">
+                        <p> Yeah  Man Not really</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <script src="../Assignment_2/typeface_specimen.js"></script>
 
 
 
