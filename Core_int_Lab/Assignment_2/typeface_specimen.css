@@ -9,7 +9,7 @@ html{
 
 .container-head{
     width: 100%;
-    height: 85px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,11 +51,11 @@ html{
 
 .row{
     width: 100%;
-    padding: 2rem 1rem;
+    padding: .3rem .3rem;
     border-bottom: 1px solid #aaa;
 }
 
-.row:nth-of-type(3){
+.row:nth-of-type(6){
     border-bottom: none
 }
 
