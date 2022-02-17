@@ -1,3 +1,26 @@
+/* Link appearance */
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+a:hover {
+    color: rgb(128, 12, 12);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+a:active {
+    color: rgb(128, 12, 12);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
 html{
     --font-size: 40px;
 }
