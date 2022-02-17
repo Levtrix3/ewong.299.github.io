@@ -74,7 +74,7 @@ html{
     position: absolute;
     width: 150px;
     height: 100%;
-    background: linear-gradient(90deg, #00000000 10%, #ffdbdb 60%);
+    background: linear-gradient(90deg, #00000000 10%, rgb(17, 17, 17) 60%);
     right: 0;
     top: 0;
 }
