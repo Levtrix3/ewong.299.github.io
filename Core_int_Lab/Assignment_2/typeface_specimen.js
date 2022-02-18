@@ -1,6 +1,6 @@
 
 slider.oninput = () => {
-    //Change Span Value
+    //Change the value of the span ( font and number )
     const slider = document.getElementById('slider');
     const pixels = document.getElementById('pixels');
     pixels.innerHTML = slider.value;
