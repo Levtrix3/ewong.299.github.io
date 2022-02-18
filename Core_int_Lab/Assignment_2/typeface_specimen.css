@@ -101,3 +101,21 @@ html{
     right: 0;
     top: 0;
 }
+
+/* Grid for Glyphs */
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    background-color: #2195f300;
+    padding: 10px;
+}
+  
+.grid-item {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    height: 30pt;
+    width: 30pt;
+    font-size: 30px;
+    text-align: center;
+}
