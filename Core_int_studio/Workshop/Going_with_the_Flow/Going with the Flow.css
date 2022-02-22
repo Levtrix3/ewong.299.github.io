@@ -1,40 +1,57 @@
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
-    height: 100%;
-    margin: 0;
-    margin-left: 30pt;
-    margin-right: 30pt;
+  height: 100%;
+  margin: 0;
+  margin-left: 30pt;
+  margin-right: 30pt;
 
     
-  }
+}
   
-  /* Style tab links */
-  .tablink {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    float: right;
-    cursor: pointer;
-    border: 2px rgb(0, 0, 0);
-    outline: none;
-    border-color: black;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-  }
+/* Style tab links */
+.tablink {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  float: right;
+  cursor: pointer;
+  border: 2px rgb(0, 0, 0);
+  outline: none;
+  border-color: black;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
   
-  .tablink:hover {
-    background-color: rgb(121, 8, 8);
-  }
+.tablink:hover {
+  background-color: rgb(121, 8, 8);
+}
   
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: rgb(0, 0, 0);
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(0, 0, 0);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
   
-  #Feed {background-color: rgba(255, 255, 255, 0);}
-  #Realization {background-color: rgba(255, 255, 255, 0);}
-  #Frustration {background-color: rgba(255, 255, 255, 0);}
-  #Acceptance {background-color: rgba(255, 255, 255, 0);}
+#Feed {background-color: rgba(255, 255, 255, 0);}
+#Realization {background-color: rgba(255, 255, 255, 0);}
+#Frustration {background-color: rgba(255, 255, 255, 0);}
+#Acceptance {background-color: rgba(255, 255, 255, 0);}
+
+/* EXPANDING DIV BOXES */
+.grow {
+  transition: all .2s ease-in-out; 
+  height: 89px;
+  width: 22%;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.grow:hover {
+  height: 145px;
+  width: 36%;
+  margin-left: 30pt;
+  margin-top: 18pt;
+  transform: scale(1.1); 
+}
