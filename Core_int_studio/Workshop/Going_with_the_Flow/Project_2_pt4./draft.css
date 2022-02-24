@@ -7,6 +7,25 @@ body, html {
 
 }
 /* TITLE ANIMATION */
+.box::after {
+  content: " ";
+  
+  background-color: rgb(0, 0, 0);
+  border-radius: 45%;
+  height: 500pt;
+  width: 500pt;
+  animation: spin 6s ease-in-out infinite; 
+  
+}
+@keyframes spin {
+  0% {
+    transform: translateY(0); rotate: (0deg);
+  
+  }
+  100% {
+    transform: translateY(-100%) rotate(500deg)
+  }
+}
 
 /* EXPANDING DIV BOXES */
 .grow {
