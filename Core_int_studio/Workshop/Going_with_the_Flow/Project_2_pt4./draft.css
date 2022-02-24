@@ -2,9 +2,70 @@
 body, html {
   height: 100%;
   margin: 0;
-  margin-left: 30pt;
-  margin-right: 30pt;
+  margin-left: 20pt;
+  margin-right: 20pt;
 
-    
 }
+
+
+/* EXPANDING DIV BOXES */
+.grow {
+   
+  height: 160px;
+  width: 36%;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.grow:hover {
+  height: 240px;
+  width: 36%;
   
+   
+}
+
+.grow_2 {
+   
+  height: 190px;
+  width: 22%;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.grow_2:hover {
+  height: 270px;
+  width: 36%;
+  
+   
+}
+
+.grow_3 {
+   
+  height: 170px;
+  width: 22%;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.grow_3:hover {
+  height: 250px;
+  width: 36%;
+  
+   
+}
+
+.grow_4 {
+   
+  height: 270px;
+  width: 22%;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.grow_4:hover {
+  height: 350px;
+  width: 36%;
+  
+   
+}
+
