@@ -6,6 +6,10 @@ body, html {
   margin-right: 20pt;
 
 }
+html {  
+  scroll-behavior: smooth;  
+}
+
 /* TITLE ANIMATION */
 .box::after {
   content: " ";
