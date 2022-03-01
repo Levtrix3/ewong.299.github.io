@@ -48,6 +48,17 @@ html {
     }
     
   
+.paragraphsections:hover {
+    color: rgba(197, 1, 1, 0.89);
+    outline: none;
+    border: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    text-align: left;
+    font-size: 12pt;
+    font-family: 'Josefin Sans', sans-serif;
+}
+        
+      
 /* EXPANDING DIV BOXES */
 .grow {
      
@@ -137,12 +148,9 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
-a:hover {
-    background-color: rgba(197, 1, 1, 0.89);
-    color: whitesmoke;
-}
+
 a:active {
-    color: rgb(128, 12, 12);
+    color: rgba(197, 1, 1, 0.89);
     background-color: transparent;
     text-decoration: underline;
 }
