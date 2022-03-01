@@ -34,6 +34,9 @@ html {
     display: none;
     padding: 100px 20px;
     height: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+    position: absolute;
 }
 
 /* PARAGRAPHS HOVER ON SEPERATE PAGE */
