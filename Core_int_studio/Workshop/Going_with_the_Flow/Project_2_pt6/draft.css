@@ -1,0 +1,171 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    margin: 0;
+    margin-left: 20pt;
+    margin-right: 20pt;
+  
+  }
+html {  
+    scroll-behavior: smooth;  
+  }
+  
+/* Style tab links */
+.tablink {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: 1px rgba(0, 0, 0, 0);
+  outline: none;
+  font-size: 14pt;
+  font-weight: 700;
+  height: 24px;
+  color: rgb(136, 138, 139);
+  font-family: 'Josefin Sans', sans-serif;
+}
+    
+.tablink:hover {
+    background-color: rgba(197, 1, 1, 0.89);
+    color: whitesmoke;
+}
+    
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: rgb(0, 0, 0);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+    position: absolute;
+}
+
+/* PARAGRAPHS HOVER ON SEPERATE PAGE */
+.paragraphsections {
+    color: black;
+    outline: none;
+    border: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    text-align: left;
+    font-size: 12pt;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+    
+  
+.paragraphsections:hover {
+    color: rgba(197, 1, 1, 0.89);
+    outline: none;
+    border: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    text-align: left;
+    font-size: 12pt;
+    font-family: 'Josefin Sans', sans-serif;
+}
+        
+      
+/* EXPANDING DIV BOXES */
+.grow {
+     
+    height: 170px;
+    width: 36%;
+    transition: height 0.5s;
+    -webkit-transition: height 1s;
+    overflow: hidden;
+}
+.grow:hover {
+    height: 500px;
+    width: 36%;
+    
+     
+}
+  
+.grow_2 {
+     
+    height: 300px;
+    width: 22%;
+    transition: height 1.5s;
+    -webkit-transition: height 0.5s;
+    overflow: hidden;
+}
+.grow_2:hover {
+    height: 460px;
+    width: 36%;
+    
+     
+}
+  
+.grow_3 {
+     
+    height: 300px;
+    width: 22%;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    overflow: hidden;
+}
+.grow_3:hover {
+    height: 400px;
+    width: 36%;
+    
+     
+}
+  
+.grow_4 {
+     
+    height: 240px;
+    width: 22%;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    overflow: hidden;
+}
+.grow_4:hover {
+    height: 350px;
+    width: 36%;
+    
+     
+}
+
+/* HOVER APPEARANCE BOXES */
+
+
+  
+
+/* TO SHOW TAGS */
+#leftbox {
+    float:left; 
+    display: block;
+    width: 700pt;
+    
+    
+}
+
+
+  
+#rightbox{
+    float:right;
+    margin-top: 13px;
+    margin-right: 5pt;
+    width: 140pt;
+    color: rgb(136, 138, 139);
+    display: block;
+    
+}
+
+
+
+  
+/* Link appearance */
+a:link {
+    color: rgb(136, 138, 139);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(136, 138, 139);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgba(197, 1, 1, 0.89);
+    background-color: transparent;
+    text-decoration: underline;
+}
