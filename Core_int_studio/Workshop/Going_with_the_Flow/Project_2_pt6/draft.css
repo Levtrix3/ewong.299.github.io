@@ -136,7 +136,7 @@ html {
     float:left; 
     display: block;
     flex-direction: row;
-    max-width: 100%;
+    max-width: 70%;
     
     
 }
@@ -147,7 +147,7 @@ html {
     float:right;
     margin-top: 13px;
     margin-right: 5pt;
-    width: 140pt;
+    width: 28%;
     color: rgb(136, 138, 139);
     display: block;
     
