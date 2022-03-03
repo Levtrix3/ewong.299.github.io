@@ -65,15 +65,17 @@ html {
 /* EXPANDING DIV BOXES */
 .grow {
      
-    height: 170px;
-    width: 36%;
+    height: 160px;
+    max-height: 600px;
     transition: height 0.5s;
     -webkit-transition: height 1s;
     overflow: hidden;
+    
+    max-width: 700pt;
 }
 .grow:hover {
     height: 500px;
-    width: 36%;
+    max-width: 700pt;
     
      
 }
@@ -81,14 +83,14 @@ html {
 .grow_2 {
      
     height: 300px;
-    width: 22%;
+    max-width: 700pt;
     transition: height 1.5s;
     -webkit-transition: height 0.5s;
     overflow: hidden;
 }
 .grow_2:hover {
     height: 460px;
-    width: 36%;
+    max-width: 700pt;
     
      
 }
@@ -96,14 +98,15 @@ html {
 .grow_3 {
      
     height: 300px;
-    width: 22%;
+    max-width: 700pt;
     transition: height 0.5s;
     -webkit-transition: height 0.5s;
     overflow: hidden;
 }
 .grow_3:hover {
     height: 400px;
-    width: 36%;
+    
+    max-width: 700pt;
     
      
 }
@@ -111,14 +114,14 @@ html {
 .grow_4 {
      
     height: 240px;
-    width: 22%;
+    max-width: 700pt;
     transition: height 0.5s;
     -webkit-transition: height 0.5s;
     overflow: hidden;
 }
 .grow_4:hover {
     height: 350px;
-    width: 36%;
+    max-width: 700pt;
     
      
 }
@@ -132,7 +135,8 @@ html {
 #leftbox {
     float:left; 
     display: block;
-    width: 700pt;
+    flex-direction: row;
+    max-width: 100%;
     
     
 }
