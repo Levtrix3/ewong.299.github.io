@@ -2,28 +2,30 @@
 body, html {
   height: 100%;
   margin: 0;
-  margin-left: 30pt;
-  margin-right: 30pt;
+  margin-left: 20pt;
+  margin-right: 20pt;
 
-    
 }
-  
+html {  
+  scroll-behavior: smooth;  
+}
+
 /* Style tab links */
 .tablink {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  float: right;
-  cursor: pointer;
-  border: 2px rgb(0, 0, 0);
-  outline: none;
-  border-color: black;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+background-color: rgb(255, 255, 255);
+cursor: pointer;
+border: 1px rgba(0, 0, 0, 0);
+outline: none;
+font-size: 14pt;
+font-weight: 700;
+height: 24px;
+color: rgb(136, 138, 139);
+font-family: 'Josefin Sans', sans-serif;
 }
   
 .tablink:hover {
-  background-color: rgb(121, 8, 8);
+  background-color: rgba(197, 1, 1, 0.89);
+  color: whitesmoke;
 }
   
 /* Style the tab content (and add height:100% for full page content) */
@@ -32,26 +34,142 @@ body, html {
   display: none;
   padding: 100px 20px;
   height: 100%;
+  max-width: 1200px;
+  flex-direction: row;
+  position: absolute;
 }
-  
-#Feed {background-color: rgba(255, 255, 255, 0);}
-#Realization {background-color: rgba(255, 255, 255, 0);}
-#Frustration {background-color: rgba(255, 255, 255, 0);}
-#Acceptance {background-color: rgba(255, 255, 255, 0);}
 
+/* PARAGRAPHS HOVER ON SEPERATE PAGE */
+.paragraphsections {
+  color: black;
+  outline: none;
+  border: 0px;
+  background-color: rgba(240, 248, 255, 0);
+  text-align: left;
+  font-size: 12pt;
+  font-family: 'Josefin Sans', sans-serif;
+  }
+  
+
+.paragraphsections:hover {
+  color: rgba(197, 1, 1, 0.89);
+  outline: none;
+  border: 0px;
+  background-color: rgba(240, 248, 255, 0);
+  text-align: left;
+  font-size: 12pt;
+  font-family: 'Josefin Sans', sans-serif;
+}
+      
+    
 /* EXPANDING DIV BOXES */
 .grow {
-  transition: all .2s ease-in-out; 
-  height: 89px;
-  width: 22%;
+   
+  height: 160px;
+  max-height: 600px;
+  transition: height 0.5s;
+  -webkit-transition: height 1s;
+  overflow: hidden;
+  
+  max-width: 700pt;
+}
+.grow:hover {
+  height: 500px;
+  max-width: 700pt;
+  
+   
+}
+
+.grow_2 {
+   
+  height: 300px;
+  max-width: 700pt;
+  transition: height 1.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.grow_2:hover {
+  height: 460px;
+  max-width: 700pt;
+  
+   
+}
+
+.grow_3 {
+   
+  height: 300px;
+  max-width: 700pt;
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
   overflow: hidden;
 }
-.grow:hover {
-  height: 145px;
-  width: 36%;
-  margin-left: 30pt;
-  margin-top: 18pt;
-  transform: scale(1.1); 
+.grow_3:hover {
+  height: 400px;
+  
+  max-width: 700pt;
+  
+   
+}
+
+.grow_4 {
+   
+  height: 240px;
+  max-width: 700pt;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+.grow_4:hover {
+  height: 350px;
+  max-width: 700pt;
+  
+   
+}
+
+/* HOVER APPEARANCE BOXES */
+
+
+
+
+/* TO SHOW TAGS */
+#leftbox {
+  float:left; 
+  display: block;
+  flex-direction: row;
+  max-width: 70%;
+  
+  
+}
+
+
+
+#rightbox{
+  float:right;
+  margin-top: 13px;
+  margin-right: 5pt;
+  width: 28%;
+  color: rgb(136, 138, 139);
+  display: block;
+  
+}
+
+
+
+
+/* Link appearance */
+a:link {
+  color: rgb(136, 138, 139);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(136, 138, 139);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: rgba(197, 1, 1, 0.89);
+  background-color: transparent;
+  text-decoration: underline;
 }
