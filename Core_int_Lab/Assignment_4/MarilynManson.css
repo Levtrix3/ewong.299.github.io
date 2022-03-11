@@ -67,14 +67,4 @@
     }
 }
 
-/* GIF */
-img.animated-gif{
-    width: 100%;
-    height: auto;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-img.animated-gif:hover {
-    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
-    filter: blur(4px);
-}
+
