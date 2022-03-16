@@ -1,70 +1,24 @@
-/* Expansionn Css for Top logo of the page */
-.image_Fullscreen{
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.column {
+    float: left;
+    width: 50%;
+    
 }
 
-.image_Ipad{
-    display: none;
-    text-align: center;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.image_Mobile{
-    display:none;
-    text-align: center;
+.right {
+    width: 60%;
+    text-align: left;
+    float: right;
 }
 
-@media (max-width: 640px) and (min-width: 320px) {
-    .image_Fullscreen{
-        display: none;
-    }
-
-    .image_Mobile{
-        display: block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .image_Ipad{
-        display: none;
-    }
+.left {
+    width: 38%;
+    text-align: right;
+    float: left;
 }
-
-@media (max-width: 1200px) and (min-width: 640px) {
-    .image_Fullscreen{
-        display: none;
-    }
-
-    .image_Mobile{
-        display: none;
-    }
-
-    .image_Ipad{
-        display: block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (min-width: 1200px) {
-    .image_Fullscreen{
-        display: block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .image_Mobile{
-        display: none;
-    }
-
-    .image_Ipad{
-        display: none;
-    }
-}
-
 
