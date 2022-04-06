@@ -22,6 +22,15 @@ div#static h4 {
     text-align: center;
 }
 
+div#static img {
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 180pt;
+    
+}
+
 
 div#illustrations{
     display: flex;
