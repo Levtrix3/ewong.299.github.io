@@ -32,7 +32,12 @@ div#static img {
 }
 
 
-div#illustrations{
+div#group1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#group3{
     display: flex;
     flex-wrap: wrap;
 }
