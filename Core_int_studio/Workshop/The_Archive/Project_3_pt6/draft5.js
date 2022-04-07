@@ -7,9 +7,11 @@ const airtableDatabaseUrl2="https://api.airtable.com/v0/appr4ZwtYBwT8zgta/group2
 const airtableDatabaseUrl3="https://api.airtable.com/v0/appr4ZwtYBwT8zgta/group3"
 
 
+
 const authenticatedUrl1 = airtableDatabaseUrl1 + "?api_key=" + airtableApiKey
 const authenticatedUrl2 = airtableDatabaseUrl2 + "?api_key=" + airtableApiKey
 const authenticatedUrl3 = airtableDatabaseUrl3 + "?api_key=" + airtableApiKey
+
 
 
 
@@ -17,6 +19,7 @@ const authenticatedUrl3 = airtableDatabaseUrl3 + "?api_key=" + airtableApiKey
 const group1ContainerElement = document.querySelector('#group1')
 const group2ContainerElement = document.querySelector('#group2')
 const group3ContainerElement = document.querySelector('#group3')
+
 
 
 
@@ -115,6 +118,8 @@ jsonPromise3.then((data) => {
 
     }
 })
+
+
 
 
 
