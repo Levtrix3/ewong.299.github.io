@@ -19,9 +19,6 @@ const group1ContainerElement = document.querySelector('#group1')
 const group3ContainerElement = document.querySelector('#group3')
 
 
-
-
-
 // Application
 
 const fetchPromise1 = fetch(authenticatedUrl1)
@@ -85,5 +82,4 @@ jsonPromise3.then((data) => {
 
     }
 })
-
 
