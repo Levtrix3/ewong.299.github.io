@@ -3,11 +3,13 @@
 }
 html, body {
     margin: 0;
-    padding: 5%;
+    padding: 2%;
 }
 div#static {
     width: 100%;
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 div#static h1 {
     margin: 0 auto;
@@ -47,9 +49,9 @@ div#filters{
 }
 
 div.container{
-    margin: 2%;
-    padding: 2%;
-    width: 46%;
+    margin: 1%;
+    padding: 1%;
+    width: 48%;
 
 }
 
