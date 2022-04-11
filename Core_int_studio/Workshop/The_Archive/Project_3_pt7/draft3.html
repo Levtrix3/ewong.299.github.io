@@ -28,28 +28,57 @@
             <div id="static">
                 <h1>Chonky Ben</h1>
                 <h4>Pictures of the Beloved Ben Affleck</h4>
-                <h4>Powered by: Hailey Irizarry</h4>
+                <h4>Powered by: Google Images</h4>
             </div>
             <!-- Button For Filtering the Bens -->
-            <div id="filters">
-                <button id="sort-ascending">Sort by A-Z Bens </button>
-                <button id="sort-descending">Sort by Z-A Bens </button>
-
-            </div>
-
-            
-            <br>  
-            </br>
-            
-            <h3 style="text-align: center;">Ben Close Up</h3>
-            <div id="group1"> 
+            <div>
+                <button class="tablink" onclick="openPage('LISTED_BEN', this, 'white')" id="defaultOpen" >LISTED BEN</button>
+                <button class="tablink" onclick="openPage('BIG_BEN_MODE', this, 'white')" onclick="openPage1()" >BIG BEN MODE</button>
                 
+                <script>
+                    function openPage1()
+                    {   
+                    document.body.style.backgroundColor= "black";
+                    }
+                </script>
+
             </div>
 
-            <h3 style="text-align: center;">Just Ben</h3>
-            <div id="group3"> 
+            <!-- Page 1 -->
+            <div id="LISTED_BEN" class="tabcontent">
+        
+                <div id="filters">
+                    <button id="sort-ascending">Sort by A-Z Bens </button>
+                    <button id="sort-descending">Sort by Z-A Bens </button>
+    
+                </div>
+    
                 
+                <br>  
+                </br>
+                
+                <h3 style="text-align: center;">Ben Close Up</h3>
+                <div id="group1"> 
+                    
+                </div>
+    
+                <h3 style="text-align: center;">Just Ben</h3>
+                <div id="group3"> 
+                    
+                </div>
+
+
             </div>
+
+            <div id="BIG_BEN_MODE" class="tabcontent">
+                <img style=" 
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 97%;
+                " src="../Project_3_pt7/img/IMG_3283.PNG">
+
+            </div>
+            
 
             
         </main>

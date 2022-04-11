@@ -91,3 +91,30 @@ button#sort-descending {
     font-family: 'Bebas Neue', cursive;
     font-size: 12pt;
 }
+
+/* Style tab links */
+.tablink {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px rgba(0, 0, 0, 0);
+    outline: none;
+    font-size: 14pt;
+    font-weight: 700;
+    height: 24px;
+    color: rgb(136, 138, 139);
+    font-family: 'Josefin Sans', sans-serif;
+}
+      
+.tablink:hover {
+    background-color: rgba(32, 32, 32, 0.89);
+    color: whitesmoke;
+}
+      
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color:rgb(17, 17, 17);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 19pt;
+}
+
+

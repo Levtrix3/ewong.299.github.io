@@ -28,28 +28,45 @@
             <div id="static">
                 <h1>Chonky Ben</h1>
                 <h4>Pictures of the Beloved Ben Affleck</h4>
-                <h4>Powered by: Hailey Irizarry</h4>
+                <h4>Powered by: Google Images</h4>
             </div>
             <!-- Button For Filtering the Bens -->
-            <div id="filters">
-                <button id="sort-ascending">Sort by A-Z Bens </button>
-                <button id="sort-descending">Sort by Z-A Bens </button>
-
+            <div>
+                <button class="tablink" onclick="openPage('LISTED_BEN', this, 'white')" id="defaultOpen">LISTED BEN</button>
+                <button class="tablink" onclick="openPage('BIG_BEN_MODE', this, 'white')">BIG BEN MODE</button>
             </div>
 
-            
-            <br>  
-            </br>
-            
-            <h3 style="text-align: center;">Ben Close Up</h3>
-            <div id="group1"> 
+            <!-- Page 1 -->
+            <div id="LISTED_BEN" class="tabcontent">
+        
+                <div id="filters">
+                    <button id="sort-ascending">Sort by A-Z Bens </button>
+                    <button id="sort-descending">Sort by Z-A Bens </button>
+    
+                </div>
+    
                 
+                <br>  
+                </br>
+                
+                <h3 style="text-align: center;">Ben Close Up</h3>
+                <div id="group1"> 
+                    
+                </div>
+    
+                <h3 style="text-align: center;">Just Ben</h3>
+                <div id="group3"> 
+                    
+                </div>
+
+
             </div>
 
-            <h3 style="text-align: center;">Just Ben</h3>
-            <div id="group3"> 
-                
+            <div id="BIG_BEN_MODE" class="tabcontent">
+
+
             </div>
+            
 
             
         </main>
