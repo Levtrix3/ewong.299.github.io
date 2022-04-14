@@ -1,0 +1,119 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 2%;
+}
+div#static {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+div#static h1 {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-width: 40ch;
+    text-align: center;
+}
+
+div#static h4 {
+    margin: 0 auto;
+    max-width: 60ch;
+    text-align: center;
+}
+
+div#static img {
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 180pt;
+    
+}
+
+
+div#group1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#group3{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#filters{
+    text-align: right;
+}
+
+div.container{
+    margin: 1%;
+    padding: 1%;
+    width: 48%;
+
+}
+
+img.image{
+    max-width: 100%;
+}
+
+p.title {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    div.container {
+        width: 29%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    div.container {
+        width: 21%;
+    }
+}
+
+
+button#sort-ascending {
+    border: none;
+    color: black;
+    background-color: transparent;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 12pt;
+}
+
+button#sort-descending {
+    border: none;
+    color: black;
+    background-color: transparent;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 12pt;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px rgba(0, 0, 0, 0);
+    outline: none;
+    font-size: 14pt;
+    font-weight: 700;
+    height: 24px;
+    color: rgb(136, 138, 139);
+    font-family: 'Josefin Sans', sans-serif;
+}
+      
+.tablink:hover {
+    background-color: rgba(32, 32, 32, 0.89);
+    color: whitesmoke;
+}
+      
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color:rgb(17, 17, 17);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 19pt;
+}
+
