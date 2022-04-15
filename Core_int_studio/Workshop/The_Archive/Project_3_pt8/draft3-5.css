@@ -3,7 +3,7 @@
 }
 html, body {
     margin: 0;
-    padding: 1%;
+    padding: 0%;
 }
 div#static {
     width: 100%;
@@ -93,6 +93,12 @@ button#sort-descending {
     font-family: 'Bebas Neue', cursive;
     font-size: 12pt;
 }
+
+/* BIG BEN PAGE POSITION OF IMAGES */
+#BIG_BEN_MODE {background-color: rgb(0, 0, 0);
+color: white;
+}
+
 
 /* Style tab links */
 .tablink {

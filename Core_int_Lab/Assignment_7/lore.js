@@ -1,119 +1,52 @@
-// STEP 1: VARIABLES
-const users = [{
-    name: "Kayne Laing", 
-    authenticated: true,
-    credit: 1043
-}, {
-    name: "Percy Hurley", 
-    authenticated: true,
-    credit: -123
-}, {
-    name: "Bethany Benton", 
-    authenticated: false,
-    credit: 145
-}, 
-{
-    name: "Hailie Rooney", 
-    authenticated: false,
-    credit: 14
-},
-{
-    name: "Lowri Currie", 
-    authenticated: true,
-    credit: 93723
-},]
+// SECTION 1: VARIABLES
+// Our API Key for Airtable
+const airtableApiKey = "keyV7LgbJKWVZQMgS";
 
-// STEP 2: DOM REFERENCES
-const usersContainerElement = document.querySelector('#users')
-const showUsersWithCreditInDollarsButtonElement = document.querySelector("button#map")
-const showAuthenticatedUsersButtonElement = document.querySelector('button#authenticated')
-const showUsersSortedByNameAscendingButtonElement = document.querySelector('button#sort-ascending')
-const showUsersSortedByNameDescendingButtonElement = document.querySelector('button#sort-descending')
+// URL of Where our Data is Located
+const tableUrl = "https://api.airtable.com/v0/appAwnMBQDXHvuvvP/Words";
 
-// STEP 3: FUNCTIONS
-const createUserElement = (user) => {
-    // Create Container Element
-    const containerElement = document.createElement('div')
-    containerElement.classList.add('user')
-    // Create Name Element
-    const nameElement = document.createElement('p')
-    nameElement.innerHTML = 'Name: ' + user.name
-    // Create Authenticated Element
-    const authenticatedElement = document.createElement('p')
-    authenticatedElement.innerHTML = 'Authenticated: ' + user.authenticated
-    // Create Credit Element
-    const creditElement = document.createElement('p')
-    creditElement.innerHTML = 'Credit:' + user.credit
-    containerElement.appendChild(nameElement)
-    containerElement.appendChild(authenticatedElement)
-    containerElement.appendChild(creditElement)
-    return containerElement
-}
+// URL with API Key Authentication
+const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 
-const removeUsers = () => {
-    usersContainerElement.innerHTML = ""
-}
 
-const addUsers = (users) => {
-    users.forEach(user => {
-        const userElement = createUserElement(user)
-        usersContainerElement.appendChild(userElement)
-    });
-}
+// SECTION 2: DOM References 
+const bodyElement = document.querySelector('body')
+const applicationElement = document.querySelector('#application')
+const movieElement = document.querySelector('#movie')
+const ratingElement = document.querySelector('#rating')
+const aboutElement = document.querySelector('#about')
+const statusElement = document.querySelector('#status')
 
-// STEP 4: APPLICATION
-// MAP
-const usersWithCreditInDollars = users.map((user) => {
-    const userWithCreditInDollars = {
-        name: user.name, 
-        credit: user.credit, 
-        authenticated: user.authenticated
-    }
-    const creditInDollars = userWithCreditInDollars.credit / 100 
-    userWithCreditInDollars.credit = '$' + creditInDollars
-    return userWithCreditInDollars
-})
 
-// FILTER
-const authenticatedUsers = users.filter((user) => {
-    return user.authenticated
-})
-
-// SORT 
-const usersSortedByNameAscending = users.sort((userA, userB) => {
-    if (userA.name < userB.name) {
-        return -1;
-      }
-      if (userA.name > userB.name) {
-        return 1;
-      }
+// Get a 'Promise' Representing the Data that Will be Returned
+fetch(authenticatedUrl)
+  // When 'Promise' is 'Resolved', get the JSON data
+  .then((res) => res.json())
+  // Use the JSON Data
+  .then((data) => {
+    const words = data.records;
+    const movie = words.filter((word) => {
+        return word.fields.Type === 'movie'
+    })
+    // Filter for Word Types 
+    const rating = words.filter((word) => {
+        return word.fields.Type === 'rating'
+    })
+    const about = words.filter((word) => {
+        return word.fields.Type === 'about'
+    })    
+    const status = words.filter((word) => {
+        return word.fields.Type === 'status'
+    })
     
-      // names must be equal
-      return 0;
-})
-
-usersSortedByNameDescending = usersSortedByNameAscending.slice().reverse() 
-
-// SET EVENT LISTENERS
-showUsersWithCreditInDollarsButtonElement.addEventListener('click', () => {
-    removeUsers()
-    addUsers(usersWithCreditInDollars)
-})
-
-showAuthenticatedUsersButtonElement.addEventListener('click', () => {
-    removeUsers()
-    addUsers(authenticatedUsers)
-})
-
-showUsersSortedByNameAscendingButtonElement.addEventListener('click', () => {
-    removeUsers()
-    addUsers(usersSortedByNameAscending)
-})
-
-showUsersSortedByNameDescendingButtonElement.addEventListener('click', () => {
-    removeUsers()
-    addUsers(usersSortedByNameDescending)
-})
-
-// START APP
-addUsers(users)
+    // Set Values onto HTML Elements 
+    movieElement.innerHTML = movie[Math.floor(Math.random()*movie.length)].fields.Copy
+    ratingElement.innerHTML = rating[Math.floor(Math.random()*rating.length)].fields.Copy
+    aboutElement.innerHTML = about[Math.floor(Math.random()*about.length)].fields.Copy
+    statusElement.innerHTML = status[Math.floor(Math.random()*status.length)].fields.Copy
+    
+    applicationElement.classList.add('loaded')
+  })
+  .catch((error) => {
+    console.log(error);
+  });
