@@ -25,6 +25,9 @@ fetch(authenticatedUrl)
   // Use the JSON Data
   .then((data) => {
     const words = data.records;
+
+    
+
     const movie = words.filter((word) => {
         return word.fields.Type === 'movie'
     })
@@ -40,10 +43,10 @@ fetch(authenticatedUrl)
     })
     
     // Set Values onto HTML Elements 
-    movieElement.innerHTML = movie[Math.floor(Math.random()*movie.length)].fields.Copy
-    ratingElement.innerHTML = rating[Math.floor(Math.random()*rating.length)].fields.Copy
-    aboutElement.innerHTML = about[Math.floor(Math.random()*about.length)].fields.Copy
-    statusElement.innerHTML = status[Math.floor(Math.random()*status.length)].fields.Copy
+    movieElement.innerHTML = movie[Math.floor(Math.random()*movie.length)].fields.movie
+    ratingElement.innerHTML = rating[Math.floor(Math.random()*rating.length)].fields.rating
+    aboutElement.innerHTML = about[Math.floor(Math.random()*about.length)].fields.about
+    statusElement.innerHTML = status[Math.floor(Math.random()*status.length)].fields.status
     
     applicationElement.classList.add('loaded')
   })
