@@ -29,8 +29,11 @@
             
             
             <div id="LISTED_BEN" class="tabcontent">
-                <div id="static">
-                    <div style="margin-top: 10%">
+                <div style="z-index: -3; position: absolute; top: -10%;">
+                    <img style="width: 100%; height: auto;" src="../Project_3_pt8/img/1.jpg">
+                </div>
+                <div id="static" style="z-index: 1; position: relative;">
+                    <div>
                         <h1>Chonky Ben</h1>
                         <h4>Pictures of the Beloved Ben Affleck</h4>
                         <h4>Powered by: Google Images</h4>
@@ -43,18 +46,19 @@
 
                 <div style="text-align: center;">
                     
-                    <button class="tablink" onclick="openPage('BIG_BEN_MODE', this, 'black')" >BIG BEN MODE</button>
+                    <button class="tablink" onclick="openPage('BIG_BEN_MODE', this, 'black'); myFunction()">BIG BEN MODE</button>
+                    <script>
+                        function myFunction()
+                        {   
+                        document.body.style.backgroundColor= "black";
+                        }
+                    </script>
                     
                 </div>
                 <br>  
                 </br>
         
-                <!-- What to Fix! -->
-                <div id="filters">
-                    <button id="sort-ascending">Sort by A-Z Bens </button>
-                    <button id="sort-descending">Sort by Z-A Bens </button>
-    
-                </div>
+                
     
                 
 
@@ -76,11 +80,15 @@
 
             </div>
 
+            <!-- Page 2 -->
+
             <div id="BIG_BEN_MODE" class="tabcontent" style="margin: 0%;
             height: 100%;
-            width: 100%;
-            background-color: black;">
-                <div id="static">
+            width: 100%;">
+                <div style="z-index: -3; position: absolute; top: -10%;">
+                    <img style="width: 100%; height: auto;" src="../Project_3_pt8/img/2.jpg">
+                </div>
+                <div id="static" style="z-index: 1; position: relative;">
                     
                     <h1>THE BIG BEN</h1>
                     
@@ -88,21 +96,178 @@
 
                 <div id="clock" style="color: white; text-align: center; font-size: 68pt;"></div>
 
-                <div style="text-align: center;">
-                    <button class="tablink" onclick="openPage('LISTED_BEN', this, 'white')" id="defaultOpen" >JUST BEN</button>
-                    
+                <div style="text-align: center; background-color: black;">
+                    <button class="tablink" onclick="openPage('LISTED_BEN', this, 'white'); secondFunction()" id="defaultOpen" >JUST BEN</button>
+                    <script>
+                        function secondFunction()
+                        {   
+                        document.body.style.backgroundColor= "white";
+                        }
+                    </script>
                     
                 </div>
-                <br>  
-                </br>
-                <img style=" 
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 100%;
-                " src="../Project_3_pt8/img/Untitled_Artwork.png">
+                <div id="space">
+                    <span></span>
+                </div>
+                
+                <div style="background-color: black;">
+                    <img style=" 
+                    margin-left: auto;
+                    margin-right: auto;
+                    max-width: 100%;"
+                     src="../Project_3_pt8/img/Untitled_Artwork.png">
 
-                <div style="height: 70%;">
+                    <div>
+                        <script>
+                            $(document).ready(function(){
+                            var d = new Date();
+                            var n = d.getHours();
+
+                            //1-2am
+                            if (n > 23 || n < 2) {
+                            $("img#photo1").attr("src","images/head6.png");
+                            $('body').css({'background-color':'#2e3348','color':'#FFF'});
+                            }
+
+                            //2-3am
+                            else if (n > 24 || n < 3) {
+                            $("img#photo1").attr("src","images/head6.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //3-4am
+                            else if (n > 1 || n < 4) {
+                            $("img#photo1").attr("src","images/head6.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //4-5am
+                            else if (n > 2 || n < 5) {
+                            $("img#photo1").attr("src","images/head6.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //5-6am
+                            else if (n > 3 || n < 6) {
+                            $("img#photo1").attr("src","images/head6.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //6-7am
+                            else if (n > 4 || n < 7) {
+                            $("img#photo1").attr("src","images/head6.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //7-8am
+                            else if (n > 5 || n < 8) {
+                            $("img#photo1").attr("src","images/head6.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //8-9am
+                            else if (n > 6 || n < 9) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //9-10am
+                            else if (n > 7 || n < 10) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //10-11am
+                            else if (n > 8 || n < 11) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //11-12am
+                            else if (n > 9 || n < 12) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //12-1pm
+                            else if (n > 10 || n < 13) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //1-2pm
+                            else if (n > 11 || n < 14) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //2-3pm
+                            else if (n > 12 || n < 15) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //3-4pm
+                            else if (n > 13 || n < 16) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //4-5pm
+                            else if (n > 14 || n < 17) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //5-6pm
+                            else if (n > 15 || n < 18) {
+                            $("img#photo1").attr("src","images/head4.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //6-7pm 
+                            else if (n > 16 || n < 19) {
+                            $("img#photo1").attr("src","images/head.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //7-8pm 
+                            else if (n > 17 || n < 20) {
+                            $("img#photo1").attr("src","images/head1.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //8-9pm 
+                            else if (n > 18 || n < 21) {
+                            $("img#photo1").attr("src","images/head1.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //9-10pm 
+                            else if (n > 19 || n < 22) {
+                            $("img#photo1").attr("src","images/head1.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //10-11pm 
+                            else if (n > 20 || n < 23) {
+                            $("img#photo1").attr("src","images/head1.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+
+                            //11-12pm 
+                            else {
+                            $("img#photo1").attr("src","images/head1.png");
+                            $('body').css({'background-color':'#5ca0d6','color':'#FFF'});
+                            }
+                            });
+                        </script>
+                    </div>
+
                 </div>
+                
+
+                
 
                 
 
