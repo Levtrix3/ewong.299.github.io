@@ -40,6 +40,7 @@ div#group1{
     display: flex;
     flex-wrap: wrap;
     
+    
 }
 
 div#group3{
@@ -53,7 +54,7 @@ div#filters{
 }
 
 div.container{
-    margin: 0%;
+    margin: 1%;
     padding: 1%;
     width: 99%;
 

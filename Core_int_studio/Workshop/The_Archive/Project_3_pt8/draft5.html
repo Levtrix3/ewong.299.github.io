@@ -29,7 +29,7 @@
             
             
             <div id="LISTED_BEN" class="tabcontent">
-                <div style="z-index: -3; position: absolute; top: -10%;">
+                <div style="z-index: -3; position: absolute; top: -10%; width: 100%; height: auto;">
                     <img style="width: 100%; height: auto;" src="../Project_3_pt8/img/1.jpg">
                 </div>
                 <div id="static" style="z-index: 1; position: relative;">
@@ -85,7 +85,7 @@
             <div id="BIG_BEN_MODE" class="tabcontent" style="margin: 0%;
             height: 100%;
             width: 100%;">
-                <div style="z-index: -3; position: absolute; top: -10%;">
+                <div style="z-index: -3; position: absolute; top: -10%; width: 100%; height: auto;">
                     <img style="width: 100%; height: auto;" src="../Project_3_pt8/img/2.jpg">
                 </div>
                 <div id="static" style="z-index: 1; position: relative;">
@@ -110,20 +110,47 @@
                     <span></span>
                 </div>
                 
-                <div>
+                <div style="height: auto; width: 100%;">
                     <img style=" 
-                    margin-left: auto;
-                    margin-right: auto;
-                    max-width: 100%;"
+                    width: 100%;
+                    height: auto;"
                     src="../Project_3_pt8/img/Untitled_Artwork.png">
 
-                    <div style="width: 100%; height: auto;" onload="TODimage">
-                        
-                        <img id="DJimage" src="" alt="DJimage">
-                    </div>
-
-                </div>
                 
+                </div>
+                <div>
+                    <img src="">
+                    <script>
+                        const images = [
+                            "image-00.jpg",
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-01.jpg", 
+                            "image-23.jpg"] //  there are 24 images
+                        const currentDate = new Date(); 
+                        const currentHour = currentDate.getHours(); // this will return a number between 0 and 23
+                        const currentImage = images[currentHour];
+                    </script>
+                </div>
 
                 
 
