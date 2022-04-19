@@ -136,64 +136,6 @@ function currentTime() {
 
 currentTime();
 
-// BIG BEN IMAGES
+// BIG BEN IMAGES ARE IN HTML
 
-var BNimages = [  // add path to directory if necessary
-  "BNimage1.jpg",
-  "BNimage2.jpg",
-  "BNimage3.jpg",
-  "BNimage4.jpg",
-  "BNimage5.jpg",
-  "BNimage6.jpg",
-  "BNimage7.jpg",
-  "BNimage8.jpg",
-  "BNimage9.jpg",
-  "BNimage10.jpg",
-  "BNimage11.jpg",
-  "BNimage12.jpg",
-  "BNimage13.jpg",
-  "BNimage14.jpg",
-  "BNimage15.jpg",
-  "BNimage16.jpg",
-  "BNimage17.jpg",
-  "BNimage18.jpg",
-  "BNimage19.jpg",
-  "BNimage20.jpg",
-  "BNimage21.jpg",
-  "BNimage22.jpg",
-  "BNimage23.jpg",
-  "BNimage24.jpg"  // NOTE: no comma after last entry
-];
-function TODimage() {
-  var now = new Date();
-  hr = now.getHours();                               // alert(hr);  // for testing
-  var BN = 0;                                               // midnight to  5:59 am
-  if ((hr >= 1) && (hr < 2)) { BN = 1; }   // 12pm to 12:59pm
-  if ((hr >= 2) && (hr < 3)) { BN = 2; } // 1pm to 1:59pm
-  if ((hr >= 3) && (hr < 4)) { BN = 3; } // 2pm to 2:59pm
-  if ((hr >= 4) && (hr < 5)) { BN = 4; } // 3pm to 3:59pm
-  if ((hr >= 5) && (hr < 6)) { BN = 5; } // 4pm to 4:59pm
-  if ((hr >= 6) && (hr < 7)) { BN = 6; } // 5pm to 5:59pm
-  if ((hr >= 7) && (hr < 8)) { BN = 7; } // 6pm to 6:59pm
-  if ((hr >= 8) && (hr < 9)) { BN = 8; } // 7pm to 7:59pm
-  if ((hr >= 9) && (hr < 10)) { BN = 9; } // 8pm to 8:59pm
-  if ((hr >= 10) && (hr < 11)) { BN = 10; } // 9pm to 9:59pm
-  if ((hr >= 11) && (hr < 12)) { BN = 11; } // 10pm to 10:59pm
-  if ((hr >= 12) && (hr < 13)) { BN =12; } // 11pm to 11:59pm
-  if ((hr >= 13) && (hr < 14)) { BN = 13; } // 12am to 12:59am
-  if ((hr >= 14) && (hr < 15)) { BN = 14; } // 13am to 13:59am
-  if ((hr >= 15) && (hr < 16)) { BN = 15; } // 14am to 14:59am
-  if ((hr >= 16) && (hr < 17)) { BN = 16; } // 15am to 15:59am
-  if ((hr >= 17) && (hr < 18)) { BN = 17; } // 16am to 16:59am
-  if ((hr >= 18) && (hr < 19)) { BN = 18; } // 17am to 17:59am
-  if ((hr >= 19) && (hr < 20)) { BN = 19; } // 18am to 18:59am
-  if ((hr >= 20) && (hr < 21)) { BN = 20; } // 19am to 19:59am
-  if ((hr >= 21) && (hr < 22)) { BN = 21; } // 20am to 20:59am
-  if ((hr >= 22) && (hr < 23)) { BN = 22; } // 21am to 21:59am
-  if ((hr >= 23) && (hr < 0)) { BN = 23; } // 22am to 22:59am
-  if ((hr >= 0) && (hr < 1)) { BN = 24; } // 23am to 23:59am
-  
-  document.getElementById('BNimage').src = BNimages[BNJ];
-  
-  
-}
+ 

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" conntent="width=device-width, initial-scale=1.0">
+        <title>Chonky Ben</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../Final/final.css" />
+        <script src="../Final/final.js" type="text/javascript" defer></script>
+        
+        
+        <style>
+           body{
+           color:rgb(17, 17, 17);
+           font-family: 'Bebas Neue', cursive;
+           font-size: 19pt;
+           
+           }
+        </style>
+    </head>
+    <!-- Final draft for this part of the assignment-->
+    <body>
+        <main>
+    
+            <!-- Page 1 -->
+            
+            
+            <div id="LISTED_BEN" class="tabcontent">
+                <div style="z-index: -3; position: absolute; top: -10%; width: 100%; height: auto;">
+                    <img style="width: 100%; height: auto;" src="../Project_3_pt8/img/1.jpg">
+                </div>
+                <div id="static" style="z-index: 1; position: relative;">
+                    <div>
+                        <h1>Chonky Ben</h1>
+                        <h4>Pictures of the Beloved Ben Affleck</h4>
+                        <h4>Powered by: Google Images</h4>
+                        <h4>Collected by: Sora :)</h4>
+
+                    </div>
+
+                    
+                </div>
+
+                <div style="text-align: center;">
+                    
+                    <button class="tablink" onclick="openPage('BIG_BEN_MODE', this, 'black'); myFunction()">BIG BEN MODE</button>
+                    <script>
+                        function myFunction()
+                        {   
+                        document.body.style.backgroundColor= "black";
+                        }
+                    </script>
+                    
+                </div>
+                <br>  
+                </br>
+        
+                
+    
+                
+
+                
+                <div style="margin-left: auto; margin-right: auto;">
+                    <h3 style="text-align: center;">Ben Close Up</h3>
+                     <div id="group1"> 
+                    
+                    </div>
+    
+                    <h3 style="text-align: center;">Just Ben</h3>
+                     <div id="group3"> 
+                    
+                    </div>
+
+                </div>
+                
+
+
+            </div>
+
+            <!-- Page 2 -->
+
+            <div id="BIG_BEN_MODE" class="tabcontent" style="margin: 0%;
+            height: 100%;
+            width: 100%;">
+                <div style="z-index: -3; position: absolute; top: -10%; width: 100%; height: auto;">
+                    <img style="width: 100%; height: auto;" src="../Project_3_pt8/img/2.jpg">
+                </div>
+                <div id="static" style="z-index: 1; position: relative;">
+                    
+                    <h1>THE BIG BEN</h1>
+                    
+                </div>
+
+                <div id="clock" style="color: white; text-align: center; font-size: 68pt;"></div>
+
+                <div style="text-align: center;">
+                    <button class="tablink" onclick="openPage('LISTED_BEN', this, 'white'); secondFunction()" id="defaultOpen" >JUST BEN</button>
+                    <script>
+                        function secondFunction()
+                        {   
+                        document.body.style.backgroundColor= "white";
+                        }
+                    </script>
+                    
+                </div>
+                <br>
+                </br>
+                
+                
+                <div style="height: auto; width: 100%;">
+                    <img style=" 
+                    width: 100%;
+                    height: auto;"
+                    src="../Project_3_pt8/img/Untitled_Artwork.png">
+
+                    <h3 style="size: 18pt; text-align: center; margin-top: 2%; margin-bottom: 0%;">"Ben Affleck Working Every Hour Of the Day"</h3>
+                    <h5 style="size: 8pt; text-align: center; margin-top: 2%;"> Images Sourced from: Google Images.</h5>
+                
+                </div>
+                <div style="text-align: center;">
+                    <img style="width: 50%; height: auto;" src="">
+                    <script>
+                        const images = [
+                            "image-00.jpg", 
+                            // 12am-1am
+                            "image-01.jpg", 
+                            // 1am-2am
+                            "image-02.jpg", 
+                            // 2am-3am
+                            "image-03.jpg", 
+                            // 3am-4am
+                            "image-04.jpg", 
+                            // 4am-5am
+                            "image-05.jpg", 
+                            // 5am-6am
+                            "image-06.jpg", 
+                            // 6am-7am
+                            "image-07.jpg", 
+                            // 7am-8am
+                            "image-08.jpg", 
+                            // 8am-9am
+                            "image-09.jpg", 
+                            // 9am-10am
+                            "image-10.jpg", 
+                            // 10am-11am
+                            "image-11.jpg", 
+                            // 11am-12pm
+                            "image-12.jpg", 
+                            // 12pm-1pm
+                            "image-13.jpg", 
+                            // 1pm-2pm
+                            "image-14.jpg", 
+                            // 2pm-3pm
+                            "image-15.jpg", 
+                            // 3pm-4pm
+                            "image-16.jpg", 
+                            // 4pm-5pm
+                            "image-17.jpg", 
+                            // 5pm-6pm
+                            "image-18.jpg", 
+                            // 6pm-7pm
+                            "image-19.jpg", 
+                            // 7pm-8pm
+                            "image-20.jpg", 
+                            // 8pm-9pm
+                            "image-21.jpg", 
+                            // 9pm-10pm
+                            "image-22.jpg",
+                            // 10pm-11pm
+                            "image-23.jpg"] 
+                            // 11pm-12am
+                            //  there are 24 images
+                        const currentDate = new Date(); 
+                        const currentHour = currentDate.getHours(); // this will return a number between 0 and 23
+                        const currentImage = images[currentHour];
+                    </script>
+                </div>
+
+                
+
+                
+
+            </div>
+
+            
+            
+
+            
+        </main>
+    
+
+
+
+
+        
+    </body>
+</html>
