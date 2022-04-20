@@ -139,30 +139,54 @@ currentTime();
 // BIG BEN IMAGES
 
 var BNimages = [  // add path to directory if necessary
-  "BNimage1.jpg",
-  "BNimage2.jpg",
-  "BNimage3.jpg",
-  "BNimage4.jpg",
-  "BNimage5.jpg",
-  "BNimage6.jpg",
-  "BNimage7.jpg",
-  "BNimage8.jpg",
-  "BNimage9.jpg",
-  "BNimage10.jpg",
-  "BNimage11.jpg",
-  "BNimage12.jpg",
-  "BNimage13.jpg",
-  "BNimage14.jpg",
-  "BNimage15.jpg",
-  "BNimage16.jpg",
-  "BNimage17.jpg",
-  "BNimage18.jpg",
-  "BNimage19.jpg",
-  "BNimage20.jpg",
-  "BNimage21.jpg",
-  "BNimage22.jpg",
-  "BNimage23.jpg",
-  "BNimage24.jpg"  // NOTE: no comma after last entry
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-00.jpg", 
+// 12am-1am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-01.jpg", 
+// 1am-2am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-02.jpg", 
+// 2am-3am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-03.jpg", 
+// 3am-4am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-04.jpg", 
+// 4am-5am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-05.jpg", 
+// 5am-6am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-06.jpg", 
+// 6am-7am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-07.jpg", 
+// 7am-8am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-08.jpg", 
+// 8am-9am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-09.jpg", 
+// 9am-10am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-10.jpg", 
+// 10am-11am
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-11.jpg", 
+// 11am-12pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-12.jpg", 
+// 12pm-1pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-13.jpg", 
+// 1pm-2pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-14.jpg", 
+// 2pm-3pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-15.jpg", 
+// 3pm-4pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-16.jpg", 
+// 4pm-5pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-17.jpg", 
+// 5pm-6pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-18.jpg", 
+// 6pm-7pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-19.jpg", 
+// 7pm-8pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-20.jpg", 
+// 8pm-9pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-21.jpg", 
+// 9pm-10pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-22.jpg",
+// 10pm-11pm
+"ewong.299.github.io/Core_int_studio/Workshop/The_Archive/Final/img/image-23.jpg"
+// 11pm-12am // NOTE: no comma after last entry
 ];
 function TODimage() {
   var now = new Date();
