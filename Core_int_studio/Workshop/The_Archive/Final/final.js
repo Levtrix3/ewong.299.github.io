@@ -137,7 +137,7 @@ function currentTime() {
 currentTime();
 
 // BIG BEN IMAGES ARE IN HTML
-const BNimages = [  // add path to directory if necessary
+const BNimage = [  // add path to directory if necessary
 "Core_int_studio/Workshop/The_Archive/Final/img/image-00.jpg", 
 // 12am-1am
 "Core_int_studio/Workshop/The_Archive/Final/img/image-01.jpg", 
@@ -189,5 +189,5 @@ const BNimages = [  // add path to directory if necessary
 ]
 const currentDate = new Date(); 
 const currentHour = currentDate.getHours(); // this will return a number between 0 and 23
-const currentImage = BNimages[currentHour];
+const currentImage = BNimage[currentHour];
     
