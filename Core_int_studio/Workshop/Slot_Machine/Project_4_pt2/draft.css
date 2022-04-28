@@ -1,0 +1,24 @@
+.slot-number {
+    font-size: 18pt;
+    font-family: 'Viga', sans-serif;
+}
+
+.message {
+    text-align: center;
+    display: none;
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.lever {
+    margin-top: 5px;
+}
+
+.tablecenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
