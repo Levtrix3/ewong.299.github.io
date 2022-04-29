@@ -15,10 +15,10 @@ function spin() {
     const num2 = getRandomNumber();
     const num3 = getRandomNumber();
 
-    item1.innnerHTML = `${num1}`;
-    item2.innnerHTML = `${num2}`;
-    item3.innnerHTML = `${num3}`;
-
+    item1.innerHTML = `${num1}`;
+    item2.innerHTML = `${num2}`;
+    item3.innerHTML = `${num3}`;
+    
     if (num1 == num2 && num1 == num3) {
         showMessage();
     } else {
