@@ -136,7 +136,11 @@ function currentTime() {
 
 currentTime();
 
+const currentDate = new Date(); 
+const currentHour = currentDate.getHours(); // this will return a number between 0 and 23
+// const currentImage = BNimages[currentHour];
 
+// Ian Testing
 const BNimages = [  // add path to directory if necessary
 "../Final/img/image-00.jpg", 
 // 12am-1am
@@ -188,9 +192,6 @@ const BNimages = [  // add path to directory if necessary
 // 11pm-12am // NOTE: no comma after last entry
 ];
 const currentImage = BNimages[currentHour];
-const currentDate = new Date(); 
-const currentHour = currentDate.getHours(); // this will return a number between 0 and 23
-
 const imageElement = document.querySelector("#BNimages")
 imageElement.src = currentImage
 
