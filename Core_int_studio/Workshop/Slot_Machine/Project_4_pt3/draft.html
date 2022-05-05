@@ -15,42 +15,76 @@
 
         body{
             font-family: 'Viga', sans-serif;
+            background-color: rgb(240, 241, 241);
         }
 
     </style>
 </head>
     <body>
-        <h1 class="center">Play Slot!</h1>
-        <div class="center lever">
-            <button style="
-                font-family: 'Viga', sans-serif;
-                border: 3px solid rgb(197, 197, 197);
-                outline: none;
-                background-color: rgb(247, 247, 247);"
-                onclick="spin()">lever
-            </button>
-        </div>
-        <table class="tablecenter">
-            <tbody>
-                <tr>
-                    <td>
-                        <span id="item1" class="slot-number">-</span>
-                    </td>
-    
-                    <td>
-                        <span id="item2" class="slot-number">-</span>
-                    </td>
-    
-                    <td>
-                        <span id="item3" class="slot-number">-</span>
-                    </td>
+        <div style="margin-right: 100px; margin-left: 100px; background-color: rgb(24, 24, 24); height: 300pt;">
+            <h1 class="center" style="color:rgb(240, 241, 241) ; padding-top: 10%;">The Slot Machine</h1>
+           
+            <div class="center">
+                <table class="tablecenter">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span id="item1" class="slot-number">?</span>
+                            </td>
+            
+                            <td>
+                                <span id="item2" class="slot-number">?</span>
+                            </td>
+            
+                            <td>
+                                <span id="item3" class="slot-number">?</span>
+                            </td>
+        
+                        </tr>
+                    </tbody>
+                </table>
+                
 
-                </tr>
-            </tbody>
-        </table>
+            </div>
+
+        </div>
+            
+            
+        
         <div id="message" class="center message">
             <h2>Winner</h2>
         </div>
+        <div>
+            <div class="center lever">
+                <button style="
+                    font-family: 'Viga', sans-serif;
+                    outline: none;
+                    background-color: rgb(123, 4, 4);
+                    color: rgb(240, 241, 241);
+                    height: 80px;
+                    width: 80px;
+                    border-color: rgba(240, 248, 255, 0);
+                    border-radius: 50%;
+                    
+                    z-index: 2;"
+                    onclick="spin()">Spin!
+                </button>
+            </div>
+            <div style="background-color: rgb(45, 45, 45);
+                width: 4vw;
+                height: 40vw;
+                border-color: rgb(45, 45, 45);
+                z-index: -1;"
+                
+                class="center lever">
+                
+                
+            </div>
+
+        </div>
+        
+        
+        
         
 
     </body>

@@ -3,6 +3,8 @@
     font-family: 'Viga', sans-serif;
     background-color: rgb(240, 241, 241);
     color: rgb(24, 24, 24);
+    padding-left: 2pt;
+    padding-right: 2pt;
 }
 
 .message {
@@ -24,5 +26,17 @@
 .tablecenter {
     margin-left: auto;
     margin-right: auto;
+}
+
+.firstDiv {
+    position:relative;
+  
+    
+}
+  
+.right-col {
+    position:absolute;
+    top:0px;
+    left:93%; 
 }
 
