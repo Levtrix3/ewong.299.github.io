@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Slot_Machine/Slot_Machine.css" />
+    <title>Slot Machine</title>
+    <script src="../Slot_Machine/Slot_Machine.js" type="text/javascript" defer></script>
+    <style>
+
+        body{
+            font-family: 'Viga', sans-serif;
+            background-color: rgb(240, 241, 241);
+        }
+
+    </style>
+</head>
+
+    <img src=""></img>
+
+    <body>
+        <div class="firstDiv">
+            <div style="margin-right: 120px; margin-left: 120px; background-color: rgb(24, 24, 24); height: 60vw;">
+                <h1 class="center" style="color:rgb(240, 241, 241) ; padding-top: 10%; font-size: 7vw;">The Slot Machine</h1>
+               
+                <div class="center">
+                    <table class="tablecenter">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span id="item1" class="slot-number">?</span>
+                                </td>
+                
+                                <td>
+                                    <span id="item2" class="slot-number">?</span>
+                                </td>
+                
+                                <td>
+                                    <span id="item3" class="slot-number">?</span>
+                                </td>
+            
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+    
+                </div>
+    
+            </div>
+                
+                
+            
+            <div id="message" class="center message">
+                <h2>Winner</h2>
+            </div>
+            <audio id="meow">
+                <source src="../Slot_Machine/Cute-cat-meow-sound.mp3">
+            </audio>
+
+
+
+
+
+
+
+            <div class="right-col" style="top: 20%;">
+                <div>
+                    <div class="center lever">
+                        <button style="
+                            font-family: 'Viga', sans-serif;
+                            outline: none;
+                            background-color: rgb(123, 4, 4);
+                            color: rgb(240, 241, 241);
+                            height: 90px;
+                            width: 90px;
+                            border-color: rgba(240, 248, 255, 0);
+                            border-radius: 50%;
+                            
+                            z-index: 2;"
+                            onclick="spin()">
+                        </button>
+                    </div>
+                    <div style="background-color: rgb(45, 45, 45);
+                        width: 3.5vw;
+                        height: 40vw;
+                        border-color: rgb(45, 45, 45);
+                        z-index: -1;
+                        margin-left: auto;
+                        margin-right: auto;
+                        "
+                        
+                        class="center lever">
+                        
+                        
+                    </div>
+        
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="text-align: center;">
+            <h3>Cat Slot Machine Instructions: Click the Lever until you get all matching units. If you win, you get to see a cat :D</h3>
+        </div>
+
+
+        
+        
+        
+        
+        
+        
+
+    </body>
+
+</html>

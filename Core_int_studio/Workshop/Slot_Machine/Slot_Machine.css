@@ -1,0 +1,43 @@
+.slot-number {
+    font-size: 28vw;
+    font-family: 'Viga', sans-serif;
+    background-color: rgb(240, 241, 241);
+    color: rgb(24, 24, 24);
+    padding-left: 2pt;
+    padding-right: 2pt;
+}
+
+.message {
+    text-align: center;
+    display: none;
+    color: rgb(24, 24, 24);
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.center {
+    text-align: center;
+}
+
+.lever {
+    margin-top: 5px;
+    
+}
+
+.tablecenter {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.firstDiv {
+    position:relative;
+  
+    
+}
+  
+.right-col {
+    position:absolute;
+    top:0px;
+    left:89%; 
+}
+
