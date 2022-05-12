@@ -1,5 +1,4 @@
 
-
 function getRandomImage() {
     //declare an array to store the images
     var randomImage = new Array();
@@ -18,24 +17,26 @@ function getRandomImage() {
     document.getElementById("item1").innerHTML = '<img src="'+ randomImage[number] +'" style="width:150px" />'; 
     document.getElementById("item2").innerHTML = '<img src="'+ randomImage[number2] +'" style="width:150px" />'; 
     document.getElementById("item3").innerHTML = '<img src="'+ randomImage[number3] +'" style="width:150px" />'; 
-    return 
-}
+    return
 
-if (number == number2 && number == number3) {
-    playMeow();
+    if (number == number2 && number == number3) {
+        playMeow();
+        
+    } else {
+        playHiss();
+    }
     
-} else {
-    playHiss();
+    function playMeow() {
+        const meow = document.getElementById("meow")
+        meow.play();
+    }
+    function playHiss() {
+        const hiss = document.getElementById("hiss")
+        hiss.play();
+    }
 }
 
-function playMeow() {
-    const meow = document.getElementById("meow")
-    meow.play();
-}
-function playHiss() {
-    const hiss = document.getElementById("hiss")
-    hiss.play();
-}
+
 
 
 
