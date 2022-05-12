@@ -1,10 +1,11 @@
 .slot-number {
     font-size: 22vw;
     font-family: 'Viga', sans-serif;
-    background-color: rgb(240, 241, 241);
+    background-color: rgb(255, 255, 255);
     color: rgb(24, 24, 24);
     padding-left: 2pt;
     padding-right: 2pt;
+    
 }
 
 .message {
@@ -35,7 +36,7 @@
     height:80%;
     top: 0%;
   
-    margin-right: 10%;
+    margin-right: 20%;
     
     
       

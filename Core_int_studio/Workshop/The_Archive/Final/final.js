@@ -140,7 +140,7 @@ const currentDate = new Date();
 const currentHour = currentDate.getHours(); // this will return a number between 0 and 23
 // const currentImage = BNimages[currentHour];
 
-// Ian Testing
+
 const BNimages = [  // add path to directory if necessary
 "../Final/img/image-00.jpg", 
 // 12am-1am

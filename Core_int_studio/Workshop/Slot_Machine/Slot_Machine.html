@@ -15,8 +15,8 @@
 
         body{
             font-family: 'Viga', sans-serif;
-            background-color: rgb(240, 241, 241);
-
+            background-color: rgb(240, 239, 239);
+            margin-top: -3%;
             
         }
 
@@ -24,9 +24,7 @@
 </head>
 <body>
     <!-- TOP AND LOGO DECOR -->
-    <div>
-
-    </div>
+    
 
     <!-- WHOLE SLOT MACHINE -->
     <div class="firstDiv">
@@ -34,7 +32,7 @@
             <!-- Ball -->
             <div>
                 <button style="border-color: rgba(240, 248, 255, 0); float: left;"
-                onclick="spin()">
+                onclick="getRandomImage()">
                 <img class="lever" src="../Slot_Machine/lever.jpg" >
                 </button>
             </div>
@@ -51,7 +49,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                   <span id="item1" class="slot-number">?</span>
+                                <span id="item1" class="slot-number">?</span>
                             </td>
                 
                             <td>
@@ -76,10 +74,15 @@
     <audio id="meow">
         <source src="../Slot_Machine/Cute-cat-meow-sound.mp3">
     </audio>
+    <audio id="hiss">
+        <source src="../Slot_Machine/Angry-cat-hissing-sound.mp3">
+    </audio>
     <!-- Instructions -->
     <div style="text-align: center">
         <h4 style="font-size: 1.4vw;"
-        >Cat Slot Machine Instructions: Click the Lever until you get all matching units. If you win, you get to see a cat :D</h4>
+        >Preface: I just adopted a kitten so this slot machine is cat themed >:)</h4>
+        <h4 style="font-size: 1.4vw;"
+        >Cat Slot Machine Instructions: Click the Lever until you get all matching units. If you win, you get to see a cat in full :D</h4>
     </div>
 
     
