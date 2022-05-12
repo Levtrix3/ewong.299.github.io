@@ -16,107 +16,73 @@
         body{
             font-family: 'Viga', sans-serif;
             background-color: rgb(240, 241, 241);
+
+            
         }
 
     </style>
 </head>
+<body>
+    <!-- TOP AND LOGO DECOR -->
+    <div>
 
-    <img src=""></img>
+    </div>
 
-    <body>
-        <div class="firstDiv">
-            <div style="margin-right: 120px; margin-left: 120px; background-color: rgb(24, 24, 24); height: 60vw;">
-                <h1 class="center" style="color:rgb(240, 241, 241) ; padding-top: 10%; font-size: 7vw;">The Slot Machine</h1>
-               
-                <div class="center">
-                    <table class="tablecenter">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <span id="item1" class="slot-number">?</span>
-                                </td>
-                
-                                <td>
-                                    <span id="item2" class="slot-number">?</span>
-                                </td>
-                
-                                <td>
-                                    <span id="item3" class="slot-number">?</span>
-                                </td>
+    <!-- WHOLE SLOT MACHINE -->
+    <div class="firstDiv">
+        <div class="right-col">
+            <!-- Ball -->
+            <div>
+                <button style="border-color: rgba(240, 248, 255, 0); float: left;"
+                onclick="spin()">
+                <img class="lever" src="../Slot_Machine/lever.jpg" >
+                </button>
+            </div>
             
-                            </tr>
-                        </tbody>
-                    </table>
+           
+        </div>
+        <!-- Slot Machine -->
+        <div style="background-color: rgb(24, 24, 24);">
+            <!-- Inside the Slot Machine -->
+            <h1 class="center" style="color:rgb(240, 241, 241) ; padding-top: 10%; font-size: 5vw;">The Slot Machine</h1>
+               
+            <div class="center">
+                <table class="tablecenter">
+                    <tbody>
+                        <tr>
+                            <td>
+                                   <span id="item1" class="slot-number">?</span>
+                            </td>
+                
+                            <td>
+                                <span id="item2" class="slot-number">?</span>
+                            </td>
+                
+                            <td>
+                                <span id="item3" class="slot-number">?</span>
+                            </td>
+            
+                        </tr>
+                     </tbody>
+                </table>
                     
     
-                </div>
+            </div>
     
-            </div>
-                
-                
-            
-            <div id="message" class="center message">
-                <h2>Winner</h2>
-            </div>
-            <audio id="meow">
-                <source src="../Slot_Machine/Cute-cat-meow-sound.mp3">
-            </audio>
-
-
-
-
-
-
-
-            <div class="right-col" style="top: 20%;">
-                <div>
-                    <div class="center lever">
-                        <button style="
-                            font-family: 'Viga', sans-serif;
-                            outline: none;
-                            background-color: rgb(123, 4, 4);
-                            color: rgb(240, 241, 241);
-                            height: 90px;
-                            width: 90px;
-                            border-color: rgba(240, 248, 255, 0);
-                            border-radius: 50%;
-                            
-                            z-index: 2;"
-                            onclick="spin()">
-                        </button>
-                    </div>
-                    <div style="background-color: rgb(45, 45, 45);
-                        width: 3.5vw;
-                        height: 40vw;
-                        border-color: rgb(45, 45, 45);
-                        z-index: -1;
-                        margin-left: auto;
-                        margin-right: auto;
-                        "
-                        
-                        class="center lever">
-                        
-                        
-                    </div>
-        
-                </div>
-
-            </div>
-
         </div>
+    </div>
+    <!-- Winning Message and Sound Effect-->
+        
+    <audio id="meow">
+        <source src="../Slot_Machine/Cute-cat-meow-sound.mp3">
+    </audio>
+    <!-- Instructions -->
+    <div style="text-align: center">
+        <h4 style="font-size: 1.4vw;"
+        >Cat Slot Machine Instructions: Click the Lever until you get all matching units. If you win, you get to see a cat :D</h4>
+    </div>
 
-        <div style="text-align: center;">
-            <h3>Cat Slot Machine Instructions: Click the Lever until you get all matching units. If you win, you get to see a cat :D</h3>
-        </div>
+    
 
-
-        
-        
-        
-        
-        
-        
-
-    </body>
-
+</body>
 </html>

@@ -1,5 +1,5 @@
 function getRandomNumber() {
-    return Math.floor(Math.random() * 2) + 1;
+    return Math.floor(Math.random() * 3) + 1;
 }
 
 function getElement(id) {
