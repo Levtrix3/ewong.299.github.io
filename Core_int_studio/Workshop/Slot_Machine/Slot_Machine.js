@@ -13,7 +13,7 @@ function getRandomImage() {
     var number2 = Math.floor(Math.random()*randomImage.length);
     var number3 = Math.floor(Math.random()*randomImage.length);
 
-    if (number == randomImage[0] && number2 == randomImage[1] && number3 == randomImage[2]) {
+    if (number == "../Slot_Machine/1.jpg" && number2 == "../Slot_Machine/2.jpg" && number3 == "../Slot_Machine/3.jpg") {
         playMeow();
         
     } else {
