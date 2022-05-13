@@ -1,0 +1,46 @@
+body {
+    
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-family: 'Staatliches', cursive;
+}
+
+.question{
+ font-size: 12pt;
+ color: white;
+ font-family: 'Staatliches', cursive;
+}
+
+.answer {
+ font-size: 14pt;
+ color: rgba(11, 165, 11, 0.64);
+ font-family: 'Staatliches', cursive;
+ 
+}
+
+@media (max-width:768px) {
+    .answer{
+        color: #ad1313;
+    }
+    .question{
+        color: rgb(0, 0, 0);
+    }
+    .body{
+        background-color: white;
+    }
+}
+
+#position {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#columns {
+    display: flex;
+    padding: 5px;
+    
+    
+    
+}
+
